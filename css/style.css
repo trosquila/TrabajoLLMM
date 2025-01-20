@@ -1,6 +1,10 @@
+body{
+    margin: 0;
+    background-repeat: no-repeat;
+   
+}
 /*CABECERA*/
 
-/*importar fuente*/
 @font-face{
     font-family:'montserrat';
     src: url('/fonts/Montserrat-VariableFont_wght.ttf');
@@ -12,4 +16,53 @@ header{
     height: 100px;
     color: white;
     font-family: montserrat, arial;
+    position: fixed;
+    top:0;
+    z-index: 100000;
+
+}
+header h1{
+    margin-top: 0;
+    text-align: center;
+    padding-top: 20px;
+}
+header p{
+    text-align: center;
+}
+
+/*CUERPO*/
+.contenedorIzquierda{
+    background-color: aquamarine;
+    position: fixed;
+    width: 20%;
+    height: 1000px;
+}
+.contenedorDerecha{
+    background-color: blueviolet;
+    position: fixed;
+    width: 20%;
+    height: 1000px;
+    right: 0;
+
+}
+main{
+    margin-top: 100px;
+    position: relative;
+}
+.centro{
+    position: relative;
+    margin: 0 20%;
+    min-height: 1000px;
+    margin-top: 100px;
+}
+/*PIE*/
+footer{
+    width: 100%;
+    background-color: #8aef96 ;
+    height: 50px;
+    color: white;
+    font-family: montserrat, arial;
+    position: fixed;
+    bottom:0;
+    z-index: 100001;
 }

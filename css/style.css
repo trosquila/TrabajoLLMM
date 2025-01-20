@@ -1,0 +1,15 @@
+/*CABECERA*/
+
+/*importar fuente*/
+@font-face{
+    font-family:'montserrat';
+    src: url('/fonts/Montserrat-VariableFont_wght.ttf');
+}
+
+header{
+    width: 100%;
+    background-color: #8aef96 ;
+    height: 100px;
+    color: white;
+    font-family: montserrat, arial;
+}

@@ -82,7 +82,7 @@ main{
 
 }
 .contenedorCentroImagen1 img:hover {
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    filter: drop-shadow(15px 15px 20px rgba(0, 0, 0, 0.7));
 }
 .menuDesplegable{
     position: fixed;
@@ -102,6 +102,7 @@ main{
     text-align: center;
     height: 60px;
     padding: 0 20px 0 20px;
+    user-select: none; /*Para quitar el cursor de seleccionar texto*/
 }
 .contenidoDesplegable:hover{
     background-color: #6fc779;
@@ -112,16 +113,28 @@ main{
     display: none;
     width: 200px;
     margin-top: 25px;
+    border-radius: 3px;
 }
 .contenidoDesplegable:hover .AparecerContenido{
     display: block;
     
 }
 .enlace{
-    width: 100%;
+    padding: 10px 0 10px 0;
+    user-select: none; /*Para quitar el cursor de seleccionar texto*/
 }
-.enlace :hover{
-    background-color: chartreuse;
+.enlace a{
+    text-decoration: none;
+    width: 100%;
+    color: black;
+}
+.enlace:hover{
+    background-color: rgb(37, 156, 97);
+    transform: scale(1.1);
+    border-radius: 3px;
+}
+.enlace:hover a{
+    color: white;
 }
 .contIframePubli1{
     display: flex;

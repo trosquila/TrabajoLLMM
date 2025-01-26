@@ -6,6 +6,9 @@ body{
     background-color: azure;
 
 }
+p{
+    padding: 0;
+}
 /*CABECERA*/
 
 @font-face{
@@ -38,14 +41,14 @@ header p{
 }
 /*CUERPO*/
 .contenedorIzquierda2{
-    background-color: rgb(251, 242, 242);
+    background-color: rgb(249, 249, 249);
     position: fixed;
     width: 20%;
     height: 100vh;
     
 }
 .contenedorDerecha{
-    background-color: rgb(251, 242, 242);
+    background-color: rgb(249, 249, 249);
     position: fixed;
     width: 20%;
     height: 100vh;
@@ -60,16 +63,17 @@ main{
     width: 60%;
     margin: auto;
     background-color: white;
+    padding: 20px;
 }
 .contenedorCentro1{
     position: relative;
     overflow: hidden;
+    
 }
 .contenedorCentro1Txt{
     float: left;
     width: 48%;
-    margin-left: 10px;
-    margin-top: 20px;
+    justify-content: end;
 }
 .contenedorCentroImagen1{
     float: right;
@@ -83,6 +87,25 @@ main{
 }
 .contenedorCentroImagen1 img:hover {
     filter: drop-shadow(15px 15px 20px rgba(0, 0, 0, 0.7));
+}
+
+.contenedorCentro2Txt{
+    float: right;
+    width: 50%;
+    justify-content: end;
+}
+.contenedorCentroImagen2{
+    float: left;
+    width: 50%;
+    display: flex;
+    justify-content: start;
+}
+.contenedorCentroImagen1  img{
+    width: 70%;
+
+}
+.contenedorCentroImagen2 img{
+    width: 70%;
 }
 .menuDesplegable{
     position: fixed;
@@ -98,26 +121,27 @@ main{
 
 }   
 .contenidoDesplegable{
-    margin: auto;
     text-align: center;
-    height: 60px;
-    padding: 0 20px 0 20px;
+    justify-self: center;
     user-select: none; /*Para quitar el cursor de seleccionar texto*/
 }
 .contenidoDesplegable:hover{
-    background-color: #6fc779;
+    background-color: #8aef96;
 }
 
 .AparecerContenido{
-    background-color: rgb(214, 205, 193);
+    background-color: rgb(214, 214, 214);
     display: none;
     width: 200px;
     margin-top: 25px;
-    border-radius: 3px;
 }
-.contenidoDesplegable:hover .AparecerContenido{
+.contenidoDesplegable:hover .AparecerContenido {
     display: block;
     
+}
+.contenidoDesplegable a{
+    text-decoration: none;
+    color: white;
 }
 .enlace{
     padding: 10px 0 10px 0;
@@ -129,22 +153,47 @@ main{
     color: black;
 }
 .enlace:hover{
-    background-color: rgb(37, 156, 97);
-    transform: scale(1.1);
+    background-color: #90e49a;
+    transform: scale(1.05);
     border-radius: 3px;
 }
 .enlace:hover a{
     color: white;
 }
-.contIframePubli1{
+.publi{
+    width: 75%;
+    background-color: rgb(192, 192, 192);
+    margin: auto;
+    margin-top: 50px;
+    height: 70vh;
+    border-radius: 5px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.publi img{
     display: flex;
-    justify-content: center;
-    margin-top: 20px;
+    justify-self: center;
+    width: 70%;
+    padding: 12px;
 
 }
-.iframePubli{
-    width: 80%;
-    height: 150px;
+.publi p{
+    padding: 20px;
+    text-align: center;
+    
+}
+.publi:hover{
+    transform: translateY(-20px); /* Aumenta de tamaño y sube */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Sombra */
+}
+.videoIndex{
+    margin-top: 40px;
+    text-align:center;
+}
+.videoIndex iframe{
+    width: 75%;
+    height: 50vh;
+    display: flex;
+    justify-self: center;
 
 }
 /*PIE*/
@@ -185,7 +234,7 @@ footer{
     background-color: rgba(255, 255, 255, 0.541);
 }
 .etiquetas{
-    background-color: #8aef96;
+    background-color: #47a652;
     width: 75%;
     border-radius: 10px;
     margin: auto;
@@ -194,13 +243,12 @@ footer{
     overflow: hidden;
 }
 .colocarLabel{
-    padding-bottom: 25px;
+    padding-bottom: 23px;
     text-align: end;
     padding-right: 30px;
 }
 .separarFormulario{
     margin-top: 100px;
-    
 }
 .contenedorGeneralLabel{
     float: left;
@@ -220,8 +268,20 @@ label{
     border: none;
 }
 .colocarInput{
-    margin-bottom: 10px;
+    margin-bottom: 14px;
+    overflow: hidden;
 }
-.colocarSexo input{
-    text-align: start;
+.colocarSexoh{
+    width: 30%;
+    float: left;
+}
+.colocarSexom{
+    width: 30%;
+    float: left;
+}
+.colocarSexom input{
+    width: 20%
+}
+.colocarSexoh input{
+    width: 20%
 }

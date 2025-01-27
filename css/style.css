@@ -219,6 +219,30 @@ main{
     justify-self: center;
 
 }
+.contenedorCalendario{
+    position: relative;
+    left: 25%;
+    margin: 20px auto 40px auto;
+    
+
+}
+.contenedorCalendario h2{
+    position: relative;
+    left: 15%;
+}
+.contenedorCalendario table{
+    border: #47a652 2px solid;
+    border-collapse: collapse;
+    table-layout: fixed;
+    text-align: center;
+}
+.contenedorCalendario td, th{
+    border: #47a652 2px solid;
+}
+.contenedorCalendario td, th{
+    width: 8vh;
+    height: 8vh;
+}
 /*PIE*/
 footer{
     width: 100%;

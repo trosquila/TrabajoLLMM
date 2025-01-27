@@ -205,7 +205,7 @@ main{
     
 }
 .publi:hover{
-    transform: translateY(-20px); /* Aumenta de tamaño y sube */
+    transform: translateY(-20px); /* sube la caja */
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Sombra */
 }
 .videoIndex{
@@ -241,6 +241,7 @@ footer{
 
 .fondoFormulario{
     background-image: url("../images/background.jpg");
+
     background-repeat: no-repeat;
     background-attachment: fixed; /*Nota: mantiene fija la imagen de fondo*/
 }

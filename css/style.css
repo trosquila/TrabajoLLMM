@@ -3,7 +3,6 @@
 }
 body{
     margin: 0;
-    background-color: azure;
 
 }
 p{
@@ -41,15 +40,13 @@ header p{
 }
 /*CUERPO*/
 .contenedorIzquierda2{
-    background-color: rgb(249, 249, 249);
-    position: fixed;
+    position: absolute;
     width: 20%;
     height: 100vh;
     
 }
 .contenedorDerecha{
-    background-color: rgb(249, 249, 249);
-    position: fixed;
+    position: absolute;
     width: 20%;
     height: 100vh;
     right: 0;
@@ -146,6 +143,7 @@ main{
 .enlace{
     padding: 10px 0 10px 0;
     user-select: none; /*Para quitar el cursor de seleccionar texto*/
+    transition: transform 0.2s ease-in;
 }
 .enlace a{
     text-decoration: none;
@@ -187,10 +185,14 @@ main{
     width: 75%;
     background-color: rgb(192, 192, 192);
     margin: auto;
-    margin-top: 50px;
+    margin-top: 60px;
     height: 70vh;
     border-radius: 5px;
     transition: transform 0.4s ease, box-shadow 0.3s ease; /* transición de la línea*/
+}
+.publi:hover{
+    transform: translateY(-20px); /* sube la caja */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Sombra */
 }
 .publi img{
     display: flex;
@@ -204,10 +206,7 @@ main{
     text-align: center;
     
 }
-.publi:hover{
-    transform: translateY(-20px); /* sube la caja */
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Sombra */
-}
+
 .videoIndex{
     margin-top: 40px;
     text-align:center;
@@ -220,28 +219,46 @@ main{
 
 }
 .contenedorCalendario{
-    position: relative;
-    left: 25%;
-    margin: 20px auto 40px auto;
+    
     
 
 }
 .contenedorCalendario h2{
-    position: relative;
-    left: 15%;
+    text-align: center;
 }
 .contenedorCalendario table{
     border: #47a652 2px solid;
     border-collapse: collapse;
     table-layout: fixed;
     text-align: center;
+    margin: 20px auto 40px auto;
 }
 .contenedorCalendario td, th{
     border: #47a652 2px solid;
 }
 .contenedorCalendario td, th{
-    width: 8vh;
+    width: 10vh;
     height: 8vh;
+}
+.festivo{
+    color: red;
+}
+.diaOtroMes{
+    color: grey;
+}
+.diaConEvento{
+    background-color: #90e49a;
+}
+.menuTabla{
+    display: none;
+    background-color: black;
+    width: 200px;
+}
+.contenedorCalendario td:hover .menuTabla{
+    display: block;
+    position: absolute;
+    left: 50%;
+
 }
 /*PIE*/
 footer{

@@ -97,7 +97,7 @@ main{
 
 }
 .contenedorCentroImagen1 img:hover {
-    filter: drop-shadow(15px 15px 20px rgba(0, 0, 0, 0.7));
+    filter: drop-shadow(15px 15px 10px rgba(0, 0, 0, 0.7));
 }
 
 .contenedorCentro2Txt{
@@ -264,7 +264,7 @@ main{
 }
 .menuTabla {
     background-color: rgb(255, 255, 255);
-    display: block; /* Oculto por defecto */
+    display: block;
     opacity: 0;
     position: absolute;
     width: 200px;
@@ -280,11 +280,11 @@ main{
 }
 
 .contenedorCalendario td {
-    position: relative; /* Necesario para que el menú se posicione correctamente */
+    position: relative;
 }
 .contenedorCalendario td:hover .menuTabla  {
     opacity: 1;
-    transform: translateX(0) translateY(-50%);
+    transform: translateY(-40%);
 }
 
 
@@ -375,7 +375,9 @@ label{
     height: 25px;
     border-radius: 10px;
     border: none;
+    outline: none;
 }
+
 .colocarSexoh{
     width: 30%;
     float: left;

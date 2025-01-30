@@ -21,16 +21,16 @@
                             <h2>Datos personales</h2>
                             <div class="contenedorGeneralLabel">
                                 <div class="colocarLabel">
-                                    <label for="">Nombre</label>
+                                    <label for="nombre">Nombre</label>
                                 </div>
                                 <div class="colocarLabel">
-                                    <label for="">Apellido</label>
+                                    <label for="apellido">Apellido</label>
                                 </div>
                                 <div class="colocarLabel">
                                     <label for="">DNI</label>
                                 </div>
                                 <div class="colocarLabel">
-                                    <label for="">Dirección</label>
+                                    <label for="direccion">Dirección</label>
                                 </div>
                                 <div class="colocarLabel">
                                     <label for="">Nombre</label>
@@ -39,7 +39,7 @@
                                     <label for="">Ciudad</label>
                                 </div>
                                 <div class="colocarLabel">
-                                    <label for="">Código postal</label>
+                                    <label for="CP">Código postal</label>
                                 </div>
                                 <div class="colocarLabel">
                                     <label for="">País</label>
@@ -67,16 +67,25 @@
 
                             <div class="contenedorGeneralInput">
                                 <div class="colocarInput">
-                                    <input type="text" name="" id="">
+                                    <input type="text" name="nombre" id="nombre" required>
                                 </div>
                                 <div class="colocarInput">
-                                    <input type="text" name="" id="">
+                                    <input type="text" name="apellido" id="apellido"pattern="(\d){8}[A-Z]" required>
+                                </div>
+                                <div class="colocarInput">  
+                                    <input type="text" name="DNI" id="direccion" pattern="((C|c)\\)([A-z\s]{1,20})\s(Nº)\s(\d)[A-Z]" required>
                                 </div>
                                 <div class="colocarInput">
-                                    <input type="text" name="" id="">
-                                </div>
-                                <div class="colocarInput">
-                                    <input type="text" name="" id="">
+                                    <input type="text" name="CP" id="CP" list="ListaCP"pattern="(\d){5}" required>
+                                    <datalist id="ListaCP">
+                                        <option value="31241">
+                                        <option value="37145">
+                                        <option value="31241">
+                                        <option value="35247">
+                                        <option value="37890">
+                                        <option value="34234">
+
+                                    </datalist>
                                 </div>
                                 <div class="colocarInput">
                                     <input type="text" name="" id="">

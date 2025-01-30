@@ -27,40 +27,37 @@
                                     <label for="apellido">Apellido</label>
                                 </div>
                                 <div class="colocarLabel">
-                                    <label for="">DNI</label>
+                                    <label for="dni">DNI</label>
                                 </div>
                                 <div class="colocarLabel">
                                     <label for="direccion">Dirección</label>
                                 </div>
                                 <div class="colocarLabel">
-                                    <label for="">Nombre</label>
-                                </div>
-                                <div class="colocarLabel">
-                                    <label for="">Ciudad</label>
+                                    <label for="ciudad">Ciudad</label>
                                 </div>
                                 <div class="colocarLabel">
                                     <label for="CP">Código postal</label>
                                 </div>
                                 <div class="colocarLabel">
-                                    <label for="">País</label>
+                                    <label for="pais">País</label>
                                 </div>
                                 <div class="colocarLabel">
-                                    <label for="">Fecha nacimiento</label>
+                                    <label for="fechaNacimiento">Fecha nacimiento</label>
                                 </div>
                                 <div class="colocarLabel">
-                                    <label for="">Email</label>
+                                    <label for="email">Email</label>
                                 </div>
                                 <div class="colocarLabel">
-                                    <label for="">Contraseña</label>
+                                    <label for="contra">Contraseña</label>
                                 </div>
                                 <div class="colocarLabel">
-                                    <label for="">Sexo</label>
+                                    <label for="sexo">Sexo</label>
                                 </div>
                                 <div class="colocarLabel">
-                                    <label for="">Aficiones</label>
+                                    <label for="aficiones">Aficiones</label>
                                 </div>
                                 <div class="colocarLabel">
-                                    <label for="">Sube una foto!</label>
+                                    <label for="foto">Sube una foto!</label>
                                 </div>
                 
                             </div>
@@ -70,10 +67,16 @@
                                     <input type="text" name="nombre" id="nombre" required>
                                 </div>
                                 <div class="colocarInput">
-                                    <input type="text" name="apellido" id="apellido"pattern="(\d){8}[A-Z]" required>
+                                    <input type="text" name="apellido" id="apellido" required>
+                                </div>
+                                <div class="colocarInput">
+                                    <input type="text" name="dni" id="dni" pattern="(\d){8}[A-Z]" required>
                                 </div>
                                 <div class="colocarInput">  
-                                    <input type="text" name="DNI" id="direccion" pattern="((C|c)\\)([A-z\s]{1,20})\s(Nº)\s(\d)[A-Z]" required>
+                                    <input type="text" name="direccion" id="direccion" pattern="((C|c)/)([A-z\s]{1,30})\s(Nº)\s(\d){1,2}[A-Z]" required>
+                                </div>
+                                <div class="colocarInput">
+                                    <input type="text" name="ciudad" id="ciudad">
                                 </div>
                                 <div class="colocarInput">
                                     <input type="text" name="CP" id="CP" list="ListaCP"pattern="(\d){5}" required>
@@ -87,40 +90,32 @@
 
                                     </datalist>
                                 </div>
+                            
                                 <div class="colocarInput">
-                                    <input type="text" name="" id="">
+                                    <input type="text" name="pais" id="pais" required>
                                 </div>
                                 <div class="colocarInput">
-                                    <input type="text" name="" id="">
+                                    <input type="text" name="fechaNacimiento" id="fechaNacimiento">
                                 </div>
                                 <div class="colocarInput">
-                                    <input type="text" name="" id="">
+                                    <input type="text" name="email" id="email" placeholder="correo@correo.es">
                                 </div>
                                 <div class="colocarInput">
-                                    <input type="text" name="" id="">
-                                </div>
-                                <div class="colocarInput">
-                                    <input type="text" name="" id="">
-                                </div>
-                                <div class="colocarInput">
-                                    <input type="text" name="" id="">
-                                </div>
-                                <div class="colocarInput">
-                                    <input type="text" name="" id="">
-                                </div>
+                                    <input type="text" name="contra" id="contra" pattern="[A-z]{7}(\w{5})\d{2}" required>
+                                </div> 
                                 <div class="colocarInput">
                                     <div class="colocarSexoh">
-                                        <label for="sexo">Hombre</label><input type="radio" name="sexo" value="H">
+                                        <label for="sexo">Hombre</label><input type="radio" name="sexo" value="H" required>
                                     </div>
                                     <div class="colocarSexom">
-                                        <label for="sexo">Mujer</label><input type="radio" name="sexo" value="M">
+                                        <label for="sexo">Mujer</label><input type="radio" name="sexo" value="M" required>
                                     </div>
                                 </div>
                                 <div class="colocarInput">
-                                    <input type="text" name="" id="" value="">
+                                    <input type="text" name="aficiones" id="aficiones" required>
                                 </div>
                                 <div class="colocarInputImagen">
-                                    <input type="file" src="" alt="">
+                                    <input type="file" src="" alt="" name="foto">
                                 </div>
                             </div>
                             <div class="colocarBotones">

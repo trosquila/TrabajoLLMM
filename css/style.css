@@ -75,16 +75,22 @@ main{
     background-color: white;
     padding: 20px;
 }
+.contenedorCentroIndex{
+    position: relative;
+    overflow: hidden;
+    width: 75%;
+    margin: auto;
+}
 .contenedorCentro1{
     position: relative;
     overflow: hidden;
-    
-}
+    }
+
 .contenedorCentro1Txt{
     float: left;
     width: 48%;
-    justify-content: end;
     margin-top: 20px;
+    text-align: justify;
 }
 .contenedorCentroImagen1{
     float: right;
@@ -103,8 +109,8 @@ main{
 .contenedorCentro2Txt{
     float: right;
     width: 50%;
-    justify-content: end;
     margin-top: 20px;
+    text-align: justify;
 }
 .contenedorCentroImagen2{
     float: left;
@@ -235,6 +241,7 @@ main{
 }
 
 .contenedorCalendario h2{
+    margin-top: 60px;
     text-align: center;
 }
 .contenedorCalendario table{
@@ -242,7 +249,7 @@ main{
     border-collapse: collapse;
     table-layout: fixed;
     text-align: center;
-    margin: 20px auto 40px auto;
+    margin: 20px auto 150px auto;
     user-select: none;
 }
 .contenedorCalendario td{
@@ -278,7 +285,12 @@ main{
     pointer-events: none;
     text-align: left;
 }
-
+.menuTabla h4{
+    text-align: center;
+    width: 75%;
+    margin: auto;
+    margin-top: 5px;
+}
 .contenedorCalendario td {
     position: relative;
 }
@@ -306,21 +318,12 @@ footer ol{
     margin-right: 23px; 
     list-style-type: square;
 }
-
-/*pijada para hover enlaces https://webdesign.tutsplus.com/es/how-to-create-different-css-hover-effects-from-scratch--cms-34222t*/
-
 /*###################
   #                 #
   #    FORMULARIO   #
   #                 #    
   ###################*/
 
-.fondoFormulario{
-    background-image: url("../images/background.jpg");
-
-    background-repeat: no-repeat;
-    background-attachment: fixed; /*Nota: mantiene fija la imagen de fondo*/
-}
 .mainFormulario{
     margin-top: 115px;
     position: relative;
@@ -331,7 +334,7 @@ footer ol{
     width: 60%;
     height: 100vh;
     margin: auto;
-    background-color: rgba(255, 255, 255, 0.541);
+    background-color: rgba(173, 173, 173, 0.623);
 }
 .contenedorFormulario{
     background-color: #47a652bd;

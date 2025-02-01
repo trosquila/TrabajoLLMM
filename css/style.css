@@ -444,7 +444,7 @@ label{
 .btnNoticias {
     z-index: 10; 
     border: none;
-    background-color: #47a652;
+    background-color: #54d663;
     border-radius: 4px;
     color: white;
     padding: 10px 20px;
@@ -466,4 +466,40 @@ label{
 }
 .btnNoticias:hover::before {
     left: 100%;
+}
+.btnNoticias:active{
+    background-color: #47a652;
+}
+.tarjeta{
+    width: 100%;
+    margin-top:50px ;
+    height: 40vh;
+    overflow: hidden;
+    background-color: aqua;
+}
+.tarjetaLocalDelante{
+    width: 45%;
+    height: 30vh;
+    position: relative;
+    margin: auto;
+    background-color: #54d663;
+    z-index: 12;
+    transition: transform 1s ease;
+    padding: 20px;
+}
+.tarjetaLocalAtras{
+    width: 45%;
+    height: 30vh;
+    top: -35vh;
+    position: relative;
+    margin: auto;
+    background-color: #721f75;
+    transition: transform 1s ease;
+    padding: 20px;
+}
+.tarjeta:hover .tarjetaLocalDelante {
+    transform: translateX(50%); /* Desplaza la parte delantera a la derecha */
+}
+.tarjeta:hover .tarjetaLocalAtras {
+    transform: translateX(-50%); /* Desplaza la parte delantera a la derecha */
 }

@@ -63,7 +63,6 @@ main{
     margin-top: 180px;
 }
 .centro{
-    position: relative;
     width: 60%;
     margin: auto;
     padding: 20px;
@@ -217,11 +216,11 @@ main{
     position: relative;
 }
 .subrayado::after {
-    content: ''; /*Si no se pone esto no va*/
+    content: '';
     position: absolute;
     width: 100%;
     height: 2px;
-    bottom: -5px; /*permite bajar la linea*/
+    bottom: -5px;
     left: 0;
     background-color: #ffffff;
     visibility: hidden;
@@ -229,11 +228,10 @@ main{
     transition: all 0.4s ease-in-out;
 }
 
-.subrayado:hover::after { /*para que se vea*/
+.subrayado:hover::after {
     visibility: visible;
     transform: scaleX(1);
 }
-/*Barras laterales*/
 .publi{
     width: 75%;
     background-color: rgb(192, 192, 192);
@@ -241,7 +239,7 @@ main{
     margin-top: 60px;
     height: 70vh;
     border-radius: 5px;
-    transition: transform 0.4s ease, box-shadow 0.3s ease; /* transición de la línea*/
+    transition: transform 0.4s ease, box-shadow 0.3s ease; 
 }
 .publi:hover{
     transform: translateY(-20px);
@@ -277,9 +275,7 @@ main{
     text-align: center;
 }
 .contenedorCalendario table{
-    border: #47a652 2px solid;
     border-collapse: collapse;
-    table-layout: fixed;
     text-align: center;
     margin: 20px auto 150px auto;
     user-select: none;
@@ -311,20 +307,20 @@ main{
     border-radius: 10px;
     left: 103%;
     top: 50%;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
     transition: opacity 0.5s ease, transform 0.5s ease;
     z-index: 1000;
     pointer-events: none;
     text-align: left;
+    box-shadow: 0 10px 20px #00000099;
+}
+.menuTabla li{
+    color: black;
 }
 .menuTabla h4{
     text-align: center;
     width: 75%;
     margin: auto;
     margin-top: 5px;
-}
-.contenedorCalendario td {
-    position: relative;
 }
 .contenedorCalendario td:hover .menuTabla  {
     opacity: 1;
@@ -376,6 +372,7 @@ footer ol{
     color: white;
     text-align: center;
     margin-bottom: 40px;
+    text-shadow: 5px 2px rgba(133, 133, 133, 0.698);
 }
 .colocarLabel{
     padding-bottom: 23px;
@@ -439,6 +436,10 @@ label{
     background: linear-gradient(255, 0, 0, 0.8);
     background-color: #90e49a;
     transform: translateY(1.3);
+    color: white;
+}
+.btn:active{
+    background-color: #47a652;
 }
 .colocarInputImagen{
     margin-bottom: 14px;
@@ -451,11 +452,8 @@ label{
 }
 /*Noticias*/
 .publiNoticias{
-    width: 100%;
     margin: 30px auto 30px auto;
     text-align: center;
-    position: relative;
-    
 }
 .btnVolverNoticias{
     width: 100%;
@@ -491,12 +489,14 @@ label{
 .btnNoticias:active{
     background-color: #47a652;
 }
+.centrarTxt{
+    text-align: center;
+}
 .tarjeta{
     width: 100%;
     margin-top:50px ;
     height: 40vh;
     overflow: hidden;
-    background-color: aqua;
 }
 .tarjetaLocalDelante{
     width: 45%;
@@ -505,22 +505,30 @@ label{
     margin: auto;
     background-color: #54d663;
     z-index: 12;
-    transition: transform 1s ease;
+    transition: transform 1s  ease;
     padding: 20px;
 }
 .tarjetaLocalAtras{
     width: 45%;
     height: 30vh;
-    top: -35vh;
+    top: -327px;
     position: relative;
     margin: auto;
-    background-color: #721f75;
-    transition: transform 1s ease;
+    background-color: #b7e9ab;
+    transition: transform 1s ease, box-transition 1s ease-in-out;
     padding: 20px;
 }
+.tarjetaLocalAtras h4, li{
+    color: white;
+}
+.tarjetaLocalDelante img{
+    margin-left: 15%;
+    margin-top: 5%;
+}
 .tarjeta:hover .tarjetaLocalDelante {
-    transform: translateX(50%);
+    transform: translateX(49%);
+    box-shadow:  0 10px 10px #00000070;
 }
 .tarjeta:hover .tarjetaLocalAtras {
-    transform: translateX(-50%);
+    transform: translateX(-49%);
 }
